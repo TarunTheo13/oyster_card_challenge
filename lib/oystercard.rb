@@ -16,4 +16,15 @@ class Oystercard
     @balance -= amount
   end
 
+  def touch_in
+    @status = true
+  end
+
+  def touch_out
+    @status = false
+  end
+
+  def in_journey?
+    @status
+  end
 end
