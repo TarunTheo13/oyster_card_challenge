@@ -17,6 +17,7 @@ class Oystercard
   end
 
   def touch_in
+    fail 'Minimum balance required: £1' if @balance < 1
     @status = true
   end
 
