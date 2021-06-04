@@ -1,3 +1,6 @@
+require_relative 'journey'
+require_relative 'station'
+
 class Oystercard
   MAXIMUM_BALANCE = 90
   MINIMUM_FARE = 1
